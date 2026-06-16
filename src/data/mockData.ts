@@ -83,7 +83,7 @@ export const programs: Program[] = [
     longDesc: "Supported by TASO and MMHF, CITRAL conducts Community-Led Monitoring (CLM) to assess the access, availability, and quality of HIV, TB, and malaria services in health facilities like Nakivale HC III, Juru HC III, and Kibengo HC III. We also perform community health screenings for Syphilis, Hepatitis B, cervical/prostate cancer, and distribute family planning methods.",
     impactMetric: "300+ surveyed",
     impactLabel: "FGD and Interview Respondents Reached",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80",
+    image: "/images/extracted/reports_for_data_collection_analysis_community_feedback_meeting_facility_level_img_4.jpg",
     activities: [
       "Community-Led Monitoring (CLM) data collection at selected health facilities",
       "Screening for HIV/AIDS, Syphilis, Hepatitis B, and cervical/prostate cancer",
@@ -101,7 +101,7 @@ export const programs: Program[] = [
     longDesc: "CITRAL implements community-led prevention of SGBV and supports survivors with multi-sectoral services and psychosocial support. We advocate at the district level for the school re-entry of teenage mothers, link vulnerable girls to GROW for skills training, and campaign against child marriage and teenage pregnancies.",
     impactMetric: "100+ mothers",
     impactLabel: "Teenage Mothers Linked to School Re-entry and GROW",
-    image: "https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=800&q=80",
+    image: "/images/extracted/community_initiative_to_transform_lives_profile_img_29.jpg",
     activities: [
       "School re-entry advocacy and regulation alignment at the district level",
       "Linking adolescent girls and teenage mothers to GROW for skills development",
@@ -119,7 +119,7 @@ export const programs: Program[] = [
     longDesc: "We facilitate clean and safe drinking water access for both host and refugee communities. CITRAL supports the construction and rehabilitation of clean water networks, designs handwashing stations, and promotes affordable hygiene facilities to prevent waterborne diseases in Isingiro.",
     impactMetric: "8,500+",
     impactLabel: "Residents Accessing Clean Water and Hygiene",
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80",
+    image: "/images/extracted/reports_for_data_collection_analysis_community_feedback_meeting_facility_level_img_5.jpg",
     activities: [
       "Promoting clean, safe drinking water access across Isingiro sub-counties",
       "Supporting the establishment of affordable latrines and sanitation stations",
@@ -137,7 +137,7 @@ export const programs: Program[] = [
     longDesc: "We train farmers on nursery bed establishment, value addition, and crop production. Cultivating crops like tomatoes, cabbages, carrots, onions, and ginger, we support farmers with modern implements, including irrigation pumps, pipes, and hoses, to sustain yields through climatic changes.",
     impactMetric: "12 Acres",
     impactLabel: "Hired Land Cultivated for Sustainable Production",
-    image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=800&q=80",
+    image: "/images/extracted/community_initiative_to_transform_lives_profile_img_38.jpg",
     activities: [
       "Nursery bed establishment and agricultural management instruction",
       "Sustainable crop production of tomatoes, beetroots, carrots, and ginger",
@@ -155,7 +155,7 @@ export const programs: Program[] = [
     longDesc: "Our environmental programs focus on wetland restoration and clean energy education. CITRAL raises over 200,000 tree seedlings (including eucalyptus, bamboo, pine) in certified nursery beds, leads the 'Run for Green' wetland campaign, and manages solid waste segregation and disposal in Isingiro TC.",
     impactMetric: "200,000+ Raised",
     impactLabel: "Eucalyptus, Pine, and Bamboo Seedlings Raised",
-    image: "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80",
+    image: "/images/extracted/community_initiative_to_transform_lives_profile_img_25.jpg",
     activities: [
       "Tree and fruit seedlings mass production in certified nursery beds",
       "Run for Green campaign to restore 65 hectares of Nakivale wetlands",
@@ -173,7 +173,7 @@ export const programs: Program[] = [
     longDesc: "CITRAL offers youth and women vocational skills to boost household income. We conduct training in fashion design, tailoring, art & crafts, and rabbit farming. We mentor participants in project management, leadership, and financial literacy to ensure sustainable economic independence.",
     impactMetric: "15 Youth",
     impactLabel: "Direct Employment Opportunities Provided",
-    image: "https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=800&q=80",
+    image: "/images/extracted/community_initiative_to_transform_lives_profile_img_17.jpg",
     activities: [
       "Vocational training in fashion design, tailoring, and art & craft",
       "Rabbit farming project training and coordination as a source of IGA",
@@ -196,8 +196,8 @@ export const successStories: SuccessStory[] = [
     intervention: "CITRAL enrolled Sharon in psychosocial counseling and skills development. Supported by youth leader Kayesu Rachael, she learned tailoring, joined a local self-advocacy panel, and received business guidance.",
     outcome: "Sharon avoided early marriage, completed her training, and is now mapped as an active youth advocate. She leads community dialogues on the dangers of teenage pregnancies and family planning.",
     quote: "CITRAL showed me that my life wasn't over. They guided me back to my path, and now I lead community dialogues to protect other young girls.",
-    imageBefore: "https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?auto=format&fit=crop&w=600&q=80",
-    imageAfter: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=600&q=80"
+    imageBefore: "/images/extracted/community_initiative_to_transform_lives_profile_img_29.jpg",
+    imageAfter: "/images/extracted/community_initiative_to_transform_lives_profile_img_17.jpg"
   },
   {
     id: "story-2",
@@ -209,8 +209,8 @@ export const successStories: SuccessStory[] = [
     intervention: "CITRAL trained Emmanuel on certified nursery bed establishment and climate-resilient crop management. He received premium vegetable seeds and shared access to the group's pump-irrigation system.",
     outcome: "Emmanuel's crop yields tripled. Growing tomatoes, cabbages, carrots, and ginger year-round with the irrigation system, he now sells surplus produce to local markets in Isingiro and Nakivale.",
     quote: "With the irrigation pump and seeds from CITRAL, I harvested my best crops ever. Farming is now a reliable business for my family.",
-    imageBefore: "https://images.unsplash.com/photo-1500937386664-56d1590d333c?auto=format&fit=crop&w=600&q=80",
-    imageAfter: "https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&w=600&q=80"
+    imageBefore: "/images/extracted/community_initiative_to_transform_lives_profile_img_38.jpg",
+    imageAfter: "/images/extracted/reports_for_data_collection_analysis_community_feedback_meeting_facility_level_img_25.jpg"
   }
 ];
 
@@ -311,7 +311,7 @@ export const newsArticles: NewsArticle[] = [
     category: "Field Activity",
     date: "April 10, 2025",
     readTime: "4 min read",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80",
+    image: "/images/extracted/reports_for_data_collection_analysis_community_feedback_meeting_facility_level_img_25.jpg",
     author: "Azairwe Jotham",
     featured: true
   },
@@ -324,7 +324,7 @@ export const newsArticles: NewsArticle[] = [
     category: "Campaign",
     date: "November 12, 2024",
     readTime: "3 min read",
-    image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80",
+    image: "/images/extracted/community_initiative_to_transform_lives_profile_img_23.jpg",
     author: "Nyangoma Sharon"
   },
   {
@@ -336,7 +336,7 @@ export const newsArticles: NewsArticle[] = [
     category: "Community Update",
     date: "August 24, 2023",
     readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80",
+    image: "/images/extracted/reports_for_data_collection_analysis_community_feedback_meeting_facility_level_img_6.jpg",
     author: "Kabatesi Shantel"
   }
 ];

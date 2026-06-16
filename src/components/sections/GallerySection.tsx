@@ -7,42 +7,42 @@ import { X, ChevronLeft, ChevronRight, Maximize2, Image as ImageIcon } from "luc
 const galleryImages = [
   {
     id: 1,
-    url: "https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?auto=format&fit=crop&w=800&q=80",
+    url: "/images/extracted/reports_for_data_collection_analysis_community_feedback_meeting_facility_level_img_4.jpg",
     title: "Community Outreach Assembly",
     category: "Health",
     size: "tall" // height class
   },
   {
     id: 2,
-    url: "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=800&q=80",
+    url: "/images/extracted/community_initiative_to_transform_lives_profile_img_38.jpg",
     title: "Permaculture Training Session",
     category: "Agriculture",
     size: "wide"
   },
   {
     id: 3,
-    url: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80",
+    url: "/images/extracted/reports_for_data_collection_analysis_community_feedback_meeting_facility_level_img_25.jpg",
     title: "Maternal Health Screenings",
     category: "Health",
     size: "normal"
   },
   {
     id: 4,
-    url: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80",
+    url: "/images/extracted/reports_for_data_collection_analysis_community_feedback_meeting_facility_level_img_5.jpg",
     title: "School Hygiene Block Build",
     category: "WASH",
     size: "tall"
   },
   {
     id: 5,
-    url: "https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80",
+    url: "/images/extracted/community_initiative_to_transform_lives_profile_img_25.jpg",
     title: "Tree Planting Initiative",
     category: "Environment",
     size: "normal"
   },
   {
     id: 6,
-    url: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80",
+    url: "/images/extracted/community_initiative_to_transform_lives_profile_img_17.jpg",
     title: "Livelihood Tailoring Lab",
     category: "Livelihood",
     size: "wide"
