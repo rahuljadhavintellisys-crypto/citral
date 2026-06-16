@@ -69,21 +69,21 @@ export default function AboutPage() {
           style={{ backgroundImage: `url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1920&q=80')` }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 to-slate-950/40" />
-        <div className="container mx-auto px-4 md:px-6 relative z-10 text-center md:text-left">
+        <div className="container mx-auto px-4 md:px-6 relative z-10 text-center flex flex-col items-center justify-center">
           <span className="font-heading text-xs font-bold uppercase tracking-wider text-emerald-400 font-manrope">
             Learn More
           </span>
           <h1 className="font-heading text-4xl sm:text-5xl font-extrabold tracking-tight mt-2 mb-4">
             Who We Are
           </h1>
-          <p className="font-sans text-sm sm:text-base text-slate-350 max-w-xl leading-relaxed">
+          <p className="font-sans text-sm sm:text-base text-slate-350 max-w-xl mx-auto leading-relaxed">
             Our history, guiding principles, and the local leadership driving impact in the Nakivale Refugee Settlement, Uganda.
           </p>
         </div>
       </section>
 
       {/* Mission, Vision, and Values */}
-      <section className="py-16 bg-white dark:bg-slate-950">
+      <section className="py-20 bg-white dark:bg-slate-950">
         <div className="container mx-auto px-4 md:px-6">
           <motion.div 
             variants={containerVariants}
@@ -93,36 +93,132 @@ export default function AboutPage() {
             className="grid grid-cols-1 md:grid-cols-3 gap-8"
           >
             {/* Vision Card */}
-            <motion.div variants={itemVariants} className="bg-slate-50 dark:bg-slate-900/40 rounded-3xl p-8 border border-slate-100 dark:border-slate-900 shadow-sm flex flex-col items-center text-center">
-              <div className="w-14 h-14 rounded-2xl bg-emerald-500/10 flex items-center justify-center text-emerald-600 mb-6 shadow-inner">
-                <Target className="w-7 h-7" />
+            <motion.div 
+              variants={itemVariants} 
+              className="bg-white dark:bg-slate-900 border border-slate-200/50 dark:border-slate-800/50 rounded-[32px] p-8 md:p-10 shadow-xs hover:shadow-2xl transition-all duration-300 ease-out group hover:-translate-y-2 relative overflow-hidden flex flex-col items-center text-center cursor-default"
+            >
+              {/* Top Accent line */}
+              <div className="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-emerald-500 to-teal-500 opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
+              
+              {/* Glow Backdrop */}
+              <div className="absolute -right-8 -bottom-8 w-28 h-28 rounded-full bg-gradient-to-br from-emerald-500/10 to-teal-500/10 opacity-0 group-hover:opacity-100 group-hover:scale-125 transition-all duration-500 ease-out blur-md z-0" />
+              
+              <div className="relative z-10 flex flex-col items-center flex-1 justify-between">
+                <div>
+                  {/* Icon */}
+                  <div className="w-16 h-16 rounded-2xl bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 border border-emerald-100 dark:border-emerald-900/40 flex items-center justify-center mx-auto mb-6 shadow-xs group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                    <Target className="w-8 h-8" />
+                  </div>
+                  
+                  {/* Title */}
+                  <h3 className="font-heading text-2xl font-extrabold text-slate-900 dark:text-white mb-4 tracking-tight group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                    Our Vision
+                  </h3>
+                  
+                  {/* Description */}
+                  <p className="font-sans text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-6">
+                    A community-led East Africa where refugees and vulnerable populations enjoy comprehensive health, economic autonomy, and live in ecological harmony.
+                  </p>
+                </div>
+                
+                {/* Pillars / Tags */}
+                <div className="flex flex-wrap justify-center gap-2 mt-auto">
+                  {["Community Agency", "Autonomy", "Harmony"].map((tag) => (
+                    <span 
+                      key={tag}
+                      className="px-3 py-1 rounded-full text-[10px] font-bold tracking-wide uppercase bg-emerald-50 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-400 border border-emerald-100/50 dark:border-emerald-900/30 group-hover:bg-emerald-500/10 transition-colors duration-300 font-manrope"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
-              <h3 className="font-heading text-xl font-bold text-slate-900 dark:text-white mb-4">Our Vision</h3>
-              <p className="font-sans text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-                A community-led East Africa where refugees and vulnerable populations enjoy comprehensive health, economic autonomy, and live in ecological harmony.
-              </p>
             </motion.div>
 
             {/* Mission Card */}
-            <motion.div variants={itemVariants} className="bg-slate-50 dark:bg-slate-900/40 rounded-3xl p-8 border border-slate-100 dark:border-slate-900 shadow-sm flex flex-col items-center text-center">
-              <div className="w-14 h-14 rounded-2xl bg-sky-500/10 flex items-center justify-center text-sky-600 mb-6 shadow-inner">
-                <Compass className="w-7 h-7" />
+            <motion.div 
+              variants={itemVariants} 
+              className="bg-white dark:bg-slate-900 border border-slate-200/50 dark:border-slate-800/50 rounded-[32px] p-8 md:p-10 shadow-xs hover:shadow-2xl transition-all duration-300 ease-out group hover:-translate-y-2 relative overflow-hidden flex flex-col items-center text-center cursor-default"
+            >
+              {/* Top Accent line */}
+              <div className="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-sky-500 to-blue-500 opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
+              
+              {/* Glow Backdrop */}
+              <div className="absolute -right-8 -bottom-8 w-28 h-28 rounded-full bg-gradient-to-br from-sky-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 group-hover:scale-125 transition-all duration-500 ease-out blur-md z-0" />
+              
+              <div className="relative z-10 flex flex-col items-center flex-1 justify-between">
+                <div>
+                  {/* Icon */}
+                  <div className="w-16 h-16 rounded-2xl bg-sky-50 dark:bg-sky-950/40 text-sky-600 dark:text-sky-400 border border-sky-100 dark:border-sky-900/40 flex items-center justify-center mx-auto mb-6 shadow-xs group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                    <Compass className="w-8 h-8" />
+                  </div>
+                  
+                  {/* Title */}
+                  <h3 className="font-heading text-2xl font-extrabold text-slate-900 dark:text-white mb-4 tracking-tight group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">
+                    Our Mission
+                  </h3>
+                  
+                  {/* Description */}
+                  <p className="font-sans text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-6">
+                    To address public health, environment, and poverty through sustainable local programming, vocational training, and infrastructure development, replacing reliance with autonomy.
+                  </p>
+                </div>
+                
+                {/* Pillars / Tags */}
+                <div className="flex flex-wrap justify-center gap-2 mt-auto">
+                  {["Vocational Training", "Local Development", "Self-Reliance"].map((tag) => (
+                    <span 
+                      key={tag}
+                      className="px-3 py-1 rounded-full text-[10px] font-bold tracking-wide uppercase bg-sky-50 dark:bg-sky-950/30 text-sky-600 dark:text-sky-400 border border-sky-100/50 dark:border-sky-900/30 group-hover:bg-sky-500/10 transition-colors duration-300 font-manrope"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
-              <h3 className="font-heading text-xl font-bold text-slate-900 dark:text-white mb-4">Our Mission</h3>
-              <p className="font-sans text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-                To address public health, environment, and poverty through sustainable local programming, vocational training, and infrastructure development, replacing reliance with autonomy.
-              </p>
             </motion.div>
 
             {/* Core Values Card */}
-            <motion.div variants={itemVariants} className="bg-slate-50 dark:bg-slate-900/40 rounded-3xl p-8 border border-slate-100 dark:border-slate-900 shadow-sm flex flex-col items-center text-center">
-              <div className="w-14 h-14 rounded-2xl bg-gold-accent/10 flex items-center justify-center text-gold-accent mb-6 shadow-inner">
-                <Heart className="w-7 h-7" />
+            <motion.div 
+              variants={itemVariants} 
+              className="bg-white dark:bg-slate-900 border border-slate-200/50 dark:border-slate-800/50 rounded-[32px] p-8 md:p-10 shadow-xs hover:shadow-2xl transition-all duration-300 ease-out group hover:-translate-y-2 relative overflow-hidden flex flex-col items-center text-center cursor-default"
+            >
+              {/* Top Accent line */}
+              <div className="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-amber-500 to-yellow-500 opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
+              
+              {/* Glow Backdrop */}
+              <div className="absolute -right-8 -bottom-8 w-28 h-28 rounded-full bg-gradient-to-br from-amber-500/10 to-yellow-500/10 opacity-0 group-hover:opacity-100 group-hover:scale-125 transition-all duration-500 ease-out blur-md z-0" />
+              
+              <div className="relative z-10 flex flex-col items-center flex-1 justify-between">
+                <div>
+                  {/* Icon */}
+                  <div className="w-16 h-16 rounded-2xl bg-amber-50 dark:bg-amber-950/40 text-amber-600 dark:text-amber-450 border border-amber-100 dark:border-amber-900/40 flex items-center justify-center mx-auto mb-6 shadow-xs group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                    <Heart className="w-8 h-8" />
+                  </div>
+                  
+                  {/* Title */}
+                  <h3 className="font-heading text-2xl font-extrabold text-slate-900 dark:text-white mb-4 tracking-tight group-hover:text-amber-600 dark:group-hover:text-amber-405 transition-colors">
+                    Core Values
+                  </h3>
+                  
+                  {/* Description */}
+                  <p className="font-sans text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-6">
+                    Empathy, local agency, environmental stewardship, financial accountability, and active gender equity shape every single action we take.
+                  </p>
+                </div>
+                
+                {/* Pillars / Tags */}
+                <div className="flex flex-wrap justify-center gap-2 mt-auto">
+                  {["Empathy & Equity", "Stewardship", "Transparency"].map((tag) => (
+                    <span 
+                      key={tag}
+                      className="px-3 py-1 rounded-full text-[10px] font-bold tracking-wide uppercase bg-amber-50 dark:bg-amber-950/30 text-amber-600 dark:text-amber-400 border border-amber-100/50 dark:border-amber-900/30 group-hover:bg-amber-500/10 transition-colors duration-300 font-manrope"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
-              <h3 className="font-heading text-xl font-bold text-slate-900 dark:text-white mb-4">Core Values</h3>
-              <p className="font-sans text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-                Empathy, local agency, environmental stewardship, financial accountability, and active gender equity shape every single action we take.
-              </p>
             </motion.div>
           </motion.div>
         </div>

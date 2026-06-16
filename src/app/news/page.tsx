@@ -39,14 +39,14 @@ export default function NewsPage() {
           style={{ backgroundImage: `url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1920&q=80')` }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 to-slate-950/40" />
-        <div className="container mx-auto px-4 md:px-6 relative z-10 text-center md:text-left">
+        <div className="container mx-auto px-4 md:px-6 relative z-10 text-center flex flex-col items-center justify-center">
           <span className="font-heading text-xs font-bold uppercase tracking-wider text-emerald-400 font-manrope">
             Media Hub
           </span>
           <h1 className="font-heading text-4xl sm:text-5xl font-extrabold tracking-tight mt-2 mb-4">
             News & Field updates
           </h1>
-          <p className="font-sans text-sm sm:text-base text-slate-355 max-w-xl leading-relaxed">
+          <p className="font-sans text-sm sm:text-base text-slate-355 max-w-xl mx-auto leading-relaxed">
             Stay informed with campaign timelines, local policy changes, community updates, and field reports directly from Isingiro.
           </p>
         </div>

@@ -108,44 +108,48 @@ export default function GallerySection() {
           </div>
         </div>
 
-        {/* Grid Masonry Layout */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredImages.map((img, idx) => (
-            <motionFramer.div
-              layout
-              key={img.id}
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4 }}
-              onClick={() => setLightboxIndex(idx)}
-              className={`group relative rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-150 dark:border-slate-800 cursor-pointer ${
-                img.size === "tall" ? "h-96" : img.size === "wide" ? "h-64 lg:col-span-2" : "h-64"
-              }`}
-            >
-              <img
-                src={img.url}
-                alt={img.title}
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                loading="lazy"
-              />
-              {/* Overlay hover */}
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6" />
-              <div className="absolute inset-x-6 bottom-6 flex items-end justify-between opacity-0 group-hover:opacity-100 translate-y-3 group-hover:translate-y-0 transition-all duration-300 text-white z-10">
-                <div className="flex flex-col gap-1">
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 font-manrope">
+        {/* Grid Layout — perfectly aligned cards with tight spacing and border */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+          {filteredImages.map((img, idx) => {
+            return (
+              <motionFramer.div
+                layout
+                key={img.id}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4 }}
+                onClick={() => setLightboxIndex(idx)}
+                className="group flex flex-col overflow-hidden bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800/80 shadow-xs hover:shadow-md hover:border-emerald-500/30 dark:hover:border-emerald-500/30 transition-all duration-350 cursor-pointer"
+              >
+                {/* Image Container with fixed aspect ratio */}
+                <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100 dark:bg-slate-950">
+                  <img
+                    src={img.url}
+                    alt={img.title}
+                    className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                    loading="lazy"
+                  />
+                  {/* Hover Overlay Inside the Image Container */}
+                  <div className="absolute inset-0 bg-slate-950/20 dark:bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                    <div className="w-10 h-10 rounded-full bg-white/95 dark:bg-slate-900/95 text-slate-800 dark:text-slate-100 shadow-md flex items-center justify-center transform scale-90 group-hover:scale-100 transition-all duration-300">
+                      <Maximize2 className="w-4 h-4" />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Card Info Content (Always Visible) */}
+                <div className="flex flex-col flex-grow p-4 bg-white dark:bg-slate-900/50 border-t border-slate-100 dark:border-slate-800/60">
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-1 font-manrope">
                     {img.category}
                   </span>
-                  <h3 className="font-heading font-bold text-base">
+                  <h3 className="font-heading font-bold text-sm sm:text-base text-slate-800 dark:text-slate-250 line-clamp-1 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
                     {img.title}
                   </h3>
                 </div>
-                <div className="w-10 h-10 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center text-white border border-white/20">
-                  <Maximize2 className="w-4 h-4" />
-                </div>
-              </div>
-            </motionFramer.div>
-          ))}
+              </motionFramer.div>
+            );
+          })}
         </div>
 
         {/* Lightbox Modal overlay */}

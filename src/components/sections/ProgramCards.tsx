@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { 
-  HeartPulse, 
-  ShieldAlert, 
-  Droplet, 
-  Sprout, 
-  Trees, 
+import {
+  HeartPulse,
+  ShieldAlert,
+  Droplet,
+  Sprout,
+  Trees,
   TrendingUp,
   ArrowRight,
   Sparkles
@@ -97,10 +97,11 @@ export default function ProgramCards() {
                   src={program.image}
                   alt={program.title}
                   className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  style={{ objectPosition: program.imagePosition || 'center' }}
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/10 to-transparent opacity-60" />
-                
+
                 {/* Floating Icon */}
                 <div className="absolute top-4 left-4 w-12 h-12 rounded-2xl bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
                   {getIcon(program.iconName)}

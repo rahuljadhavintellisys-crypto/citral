@@ -9,6 +9,7 @@ export interface Program {
   impactMetric: string;
   impactLabel: string;
   image: string;
+  imagePosition?: string;
   activities: string[];
 }
 
@@ -84,6 +85,7 @@ export const programs: Program[] = [
     impactMetric: "300+ surveyed",
     impactLabel: "FGD and Interview Respondents Reached",
     image: "/images/extracted/reports_for_data_collection_analysis_community_feedback_meeting_facility_level_img_4.jpg",
+    imagePosition: "center 15%",
     activities: [
       "Community-Led Monitoring (CLM) data collection at selected health facilities",
       "Screening for HIV/AIDS, Syphilis, Hepatitis B, and cervical/prostate cancer",
@@ -102,6 +104,7 @@ export const programs: Program[] = [
     impactMetric: "100+ mothers",
     impactLabel: "Teenage Mothers Linked to School Re-entry and GROW",
     image: "/images/extracted/community_initiative_to_transform_lives_profile_img_29.jpg",
+    imagePosition: "center 20%",
     activities: [
       "School re-entry advocacy and regulation alignment at the district level",
       "Linking adolescent girls and teenage mothers to GROW for skills development",
@@ -120,6 +123,7 @@ export const programs: Program[] = [
     impactMetric: "8,500+",
     impactLabel: "Residents Accessing Clean Water and Hygiene",
     image: "/images/extracted/reports_for_data_collection_analysis_community_feedback_meeting_facility_level_img_5.jpg",
+    imagePosition: "center 15%",
     activities: [
       "Promoting clean, safe drinking water access across Isingiro sub-counties",
       "Supporting the establishment of affordable latrines and sanitation stations",
@@ -138,6 +142,7 @@ export const programs: Program[] = [
     impactMetric: "12 Acres",
     impactLabel: "Hired Land Cultivated for Sustainable Production",
     image: "/images/extracted/community_initiative_to_transform_lives_profile_img_38.jpg",
+    imagePosition: "center 20%",
     activities: [
       "Nursery bed establishment and agricultural management instruction",
       "Sustainable crop production of tomatoes, beetroots, carrots, and ginger",
@@ -156,6 +161,7 @@ export const programs: Program[] = [
     impactMetric: "200,000+ Raised",
     impactLabel: "Eucalyptus, Pine, and Bamboo Seedlings Raised",
     image: "/images/extracted/community_initiative_to_transform_lives_profile_img_25.jpg",
+    imagePosition: "center 35%",
     activities: [
       "Tree and fruit seedlings mass production in certified nursery beds",
       "Run for Green campaign to restore 65 hectares of Nakivale wetlands",
@@ -174,6 +180,7 @@ export const programs: Program[] = [
     impactMetric: "15 Youth",
     impactLabel: "Direct Employment Opportunities Provided",
     image: "/images/extracted/community_initiative_to_transform_lives_profile_img_17.jpg",
+    imagePosition: "center 75%",
     activities: [
       "Vocational training in fashion design, tailoring, and art & craft",
       "Rabbit farming project training and coordination as a source of IGA",

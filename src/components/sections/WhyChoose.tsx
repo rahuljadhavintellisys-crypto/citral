@@ -12,32 +12,32 @@ import {
 
 const features = [
   {
-    icon: <Users2 className="w-6 h-6 text-emerald-600" />,
+    icon: <Users2 className="w-6 h-6" />,
     title: "100% Community-Driven",
     description: "Our initiatives are designed, built, and led by the community, avoiding top-down solutions and ensuring cultural alignment."
   },
   {
-    icon: <Heart className="w-6 h-6 text-emerald-600" />,
+    icon: <Heart className="w-6 h-6" />,
     title: "25,000+ Lives Impacted",
     description: "Since 2016, we have actively tracked and expanded our programs to lift families out of vulnerability."
   },
   {
-    icon: <Globe2 className="w-6 h-6 text-emerald-600" />,
+    icon: <Globe2 className="w-6 h-6" />,
     title: "Direct Refugee Support",
     description: "Operating inside Nakivale Refugee Settlement, we help displaced families establish roots, security, and economic independence."
   },
   {
-    icon: <Leaf className="w-6 h-6 text-emerald-600" />,
+    icon: <Leaf className="w-6 h-6" />,
     title: "Environmental Sustainability",
     description: "Every program integrates eco-friendly practices, tree planting, and soil replenishment to defend local habitats."
   },
   {
-    icon: <TrendingUp className="w-6 h-6 text-emerald-600" />,
+    icon: <TrendingUp className="w-6 h-6" />,
     title: "Long-Term Development",
     description: "We focus on skill-building, seed capital, and structural water assets that serve generations, not temporary relief."
   },
   {
-    icon: <GraduationCap className="w-6 h-6 text-emerald-600" />,
+    icon: <GraduationCap className="w-6 h-6" />,
     title: "Women & Youth Empowerment",
     description: "Specifically targeting teenage mothers and young social innovators to lead tomorrow's community growth."
   }
@@ -96,8 +96,8 @@ export default function WhyChoose() {
             >
               <div className="flex gap-4">
                 {/* Icon wrapper */}
-                <div className="w-12 h-12 rounded-xl bg-white dark:bg-slate-950 border border-slate-100 dark:border-slate-900 flex items-center justify-center shrink-0 shadow-inner group-hover:bg-primary-green group-hover:text-white transition-all duration-300">
-                  <div className="group-hover:scale-110 transition-transform duration-300 group-hover:text-white">
+                <div className="w-12 h-12 rounded-xl bg-white dark:bg-slate-950 border border-slate-100 dark:border-slate-900 flex items-center justify-center shrink-0 shadow-inner text-emerald-600 dark:text-emerald-400 group-hover:bg-primary-green group-hover:text-white transition-all duration-300">
+                  <div className="group-hover:scale-110 transition-transform duration-300">
                     {item.icon}
                   </div>
                 </div>

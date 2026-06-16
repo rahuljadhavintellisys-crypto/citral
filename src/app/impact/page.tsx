@@ -76,14 +76,14 @@ export default function ImpactPage() {
           style={{ backgroundImage: `url('https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?auto=format&fit=crop&w=1920&q=80')` }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 to-slate-950/40" />
-        <div className="container mx-auto px-4 md:px-6 relative z-10 text-center md:text-left">
+        <div className="container mx-auto px-4 md:px-6 relative z-10 text-center flex flex-col items-center justify-center">
           <span className="font-heading text-xs font-bold uppercase tracking-wider text-emerald-400 font-manrope">
             Our Legacy
           </span>
           <h1 className="font-heading text-4xl sm:text-5xl font-extrabold tracking-tight mt-2 mb-4">
             Showcasing Our Impact
           </h1>
-          <p className="font-sans text-sm sm:text-base text-slate-355 max-w-xl leading-relaxed">
+          <p className="font-sans text-sm sm:text-base text-slate-355 max-w-xl mx-auto leading-relaxed">
             Review the transparent metrics, visual stories, and physical transformations we have achieved since 2016 in Isingiro, Uganda.
           </p>
         </div>
