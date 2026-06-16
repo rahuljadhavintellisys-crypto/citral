@@ -187,14 +187,27 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-slate-900 pt-8 mt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 font-manrope">
-          <p>© {new Date().getFullYear()} CITRAL. All rights reserved. Registered NGO in Uganda.</p>
-          <div className="flex gap-4 mt-4 sm:mt-0">
-            <a href="#" className="hover:text-slate-300">Privacy Policy</a>
+        <div className="border-t border-slate-900 pt-8 mt-8 flex flex-col lg:flex-row items-center justify-between text-xs text-slate-500 font-manrope gap-6">
+          <p className="text-center lg:text-left">© {new Date().getFullYear()} CITRAL. All rights reserved. Registered NGO in Uganda.</p>
+          
+          <div className="flex items-center gap-1.5 text-[11px] text-slate-400 bg-slate-900/50 hover:bg-slate-900/80 px-3.5 py-1.5 rounded-full border border-slate-900 shadow-inner transition-all duration-300 hover:border-slate-800/80">
+            <span className="font-sans">Designed by team</span>
+            <a 
+              href="https://www.intellisysitsolutions.com/homepage" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="bg-gradient-to-r from-sky-400 via-emerald-400 to-sky-400 bg-[length:200%_auto] bg-clip-text text-transparent hover:bg-right transition-all duration-500 font-bold tracking-wide"
+            >
+              Intellisys
+            </a>
+          </div>
+
+          <div className="flex gap-4 flex-wrap justify-center lg:justify-end">
+            <a href="#" className="hover:text-slate-300 transition-colors">Privacy Policy</a>
             <span>•</span>
-            <a href="#" className="hover:text-slate-300">Terms of Use</a>
+            <a href="#" className="hover:text-slate-300 transition-colors">Terms of Use</a>
             <span>•</span>
-            <a href="#" className="hover:text-slate-300">Donor Transparency</a>
+            <a href="#" className="hover:text-slate-300 transition-colors">Donor Transparency</a>
           </div>
         </div>
       </div>
